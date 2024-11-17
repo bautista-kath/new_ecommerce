@@ -1,0 +1,110 @@
+#service-section {
+    margin: auto;
+    padding: auto;
+    min-width: 1366px;
+    max-width: 1920px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.service-body-containers {
+    display: flex;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    transition: transform 750ms;
+    will-change: transform;
+}
+
+.service-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1px;
+    border: 30px solid #000;
+    width: 33%;
+    /* border-image: url(../images/borders/border-01.png) 12.9% round; */
+    z-index: 2;
+    max-width: 1366px;
+    margin-top: 1%;
+    top: 0;
+    transition: transform 500ms;
+    will-change: transform;
+    min-height: 450px;
+}
+
+.service-image-00 {
+    display: block;
+}
+
+.service-image-01 {
+    display: block;
+    filter: brightness(120%);
+}
+.service-image-02 {
+    display: block;
+    filter: brightness(100%);
+}
+
+.service-content-container {
+    background-color: #101010;
+    width: 100%;
+    position: relative;
+    margin-top: -26.6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-info {
+    width: 100%;
+    padding: 5% 5%;
+}
+
+.service-title {
+    padding: 10px; /* Ensure consistent padding */
+    margin: 0 0 10px 0;
+    font-family: 'Asul', sans-serif;
+    color: #E1BE7B;
+    text-align: justify;
+    font-size: 1.3em;
+    display: inline-block;
+}
+
+.service-description {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFF;
+    text-align: justify;
+    font-size: 0.9em;
+    line-height: 2em;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+
+.service-icons {
+    margin: auto;
+    margin-left: 1%;
+    margin-top: -3%;
+    top: 22px;
+    padding: auto;
+    position: relative;
+    pointer-events: none;
+}

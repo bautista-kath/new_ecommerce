@@ -1,0 +1,195 @@
+@media (max-width: 768px) {
+    #header {
+        align-items: center;
+        background-color: #2222d8e7; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 100%;
+        padding: 0% 3%;
+        position: fixed;
+        width: 1920px;
+        z-index: 99;
+    }
+    
+    
+    #header-logo {
+        cursor: pointer;
+        display: flex;
+        margin: auto;
+        margin-right: 3%;
+        padding: auto;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    #header-logo a:hover {
+        filter: brightness(120%);
+    }
+    
+    .header-logo-image {
+        margin: auto;
+        padding-right: 5px;
+    }
+    
+    .header-logo-name {
+        cursor: pointer;
+        display: flex;
+        background-clip: text;
+        background-color: rgba(23,114,213,255);
+        background-image: linear-gradient(to left, #FFF 52%, #FF0000 48%);
+        font-family: "ChampFleury", sans-serif;
+        font-size: 1.8em;
+        font-weight: 500;
+        margin: auto;
+        padding: auto;
+        text-decoration: none;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 2px 0;
+        width: 100%;
+        z-index: 99;
+    }
+    #nav li, a, button { 
+        color: #95938a;
+        font-family: "Asul", sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .navleft-links {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .navleft-links li {
+        padding-right: 50px;
+    }
+
+    .navleft-links li a {
+        letter-spacing: 0.5px;
+        position: relative;
+        transition: all 0.5s ease 0s;
+    }
+
+    .navleft-links a::after {
+        content: "";
+        position: absolute;
+        background-color: #F09D00;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+
+    .navleft-links a:hover {
+        color: #8ba725;
+    }
+
+    .navleft-links a:hover::after {
+        width: 100%;
+    }
+
+    .navright-links {
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        margin-left: 122px;
+        list-style: none; 
+        padding: 0;
+    }
+
+    .navright-links a {
+        text-decoration: none; 
+        font-size: 0.9em; 
+        position: relative; 
+    }
+
+    .navright-links li a {
+        transition: all 0.5s ease 0s;
+        letter-spacing: 0.5px;
+        position: relative;
+        margin: 0 15px;
+    }
+
+    .navright-links a::after {
+        content: "";
+        position: absolute;
+        background-color: #F09D00;
+        height: 2px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+
+    .navright-links a:hover {
+        color: #A72527;
+    }
+
+    .navright-links a:hover::after {
+        width: 100%; 
+    }
+
+
+    .signup-container {
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        display: flex;
+        position: relative;
+    }
+
+    .signup-link button {
+        font-size: 1em;
+        font-weight: 500;
+        margin-left: 20px;
+        padding: 9px 15px;
+        border-radius: 5px;
+        background-color: #F09D00;
+        color: #161202;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s ease 0s;
+        border: 1.5px #a38383 solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Asul", "sans-serif";
+    }
+
+    .signup-icon {
+        margin-right: 8px; /* Space between the icon and the text */
+    }
+
+    .signup-link button:hover {
+        color: #000;
+        background-color: #ddd9d0;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.8), 0 17px 40px 0 #F09D00;
+        border: 1.5px #000 solid;
+    }
+
+}

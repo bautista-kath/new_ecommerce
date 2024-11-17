@@ -1,0 +1,94 @@
+/* Header container styles */
+#header {
+    align-items: center;
+    background-color: #ffffff; /* Minimalist white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 100%;
+    padding: 0% 3%;
+    position: fixed;
+    width: 100%; /* Adjusted for responsiveness */
+    z-index: 99;
+    border-bottom: 1px solid #eaeaea; /* Adds a clean divider line */
+}
+
+/* Logo container */
+#header-logo {
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    margin-right: 3%;
+    padding: auto;
+    user-select: none;
+}
+
+/* Hover effect for logo links */
+#header-logo a:hover {
+    filter: brightness(110%); /* Subtle hover effect */
+}
+
+/* Logo image */
+.header-logo-image {
+    margin: auto;
+    padding-right: 5px;
+}
+
+/* Logo name styles */
+.header-logo-name {
+    cursor: pointer;
+    display: flex;
+    color: #0a0a0a; /* Solid black text */
+    font-family: "Montserrat", sans-serif; /* Modern minimalist font */
+    font-size: 1.8em;
+    font-weight: 600; /* Bolder for emphasis */
+    margin: auto;
+    padding: auto;
+    text-decoration: none;
+}
+
+/* Navigation link styles */
+#nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    margin: 0 15px;
+}
+
+#nav ul li a {
+    color: #333333; /* Neutral text color */
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+#nav ul li a:hover {
+    color: #ff9900; /* Accent color for hover effect */
+}
+
+/* Mobile-friendly adjustments */
+@media screen and (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #nav ul li {
+        margin: 10px 0;
+    }
+}

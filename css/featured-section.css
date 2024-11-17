@@ -1,0 +1,199 @@
+#featured-section {
+    margin: auto;
+    padding: 0; /* Remove fixed padding to let content define the height */
+    min-width: 1366px;
+    max-width: 1920px;
+    width: 100%; /* Ensure section spans full width */
+    position: relative;
+    z-index: 7;
+    background-color: #d2cece; /* Optional: Set a neutral background color */
+}
+
+.featured-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 4% 1%; /* Flexible padding for spacing */
+    align-items: flex-start; /* Align to start, instead of left */
+    width: 100%;
+    position: relative;
+    letter-spacing: 0.06em;
+    z-index: 3;
+}
+
+.featured-title {
+    font-family: "Paradox King Script", sans-serif;
+    font-weight: 2000;
+    font-size: 2.5em;
+    color: #000000;
+    padding: 0% 5%;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    /* text-shadow: 8px 8px 2px #000; */
+}
+
+.featured-main {
+    /* display: flex;
+    flex-wrap: row; */
+    margin: auto;
+    padding: 2% 5%; /* Add spacing around content */
+    width: 100%;
+    /* align-items: stretch; */
+}
+
+.featured-container {
+    height: 400px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: auto;
+    padding: 5px;
+    /* border: 30px solid #000; */
+    width: 100%;
+    max-width: 100%; /* Limit container width for responsive design */
+    /* border-image: url(../images/borders/border-01.png) 12.9% round; */
+    z-index: 2;
+    transition: transform 500ms;
+    cursor: pointer;
+}
+
+.featured-container img {
+    width: 100%; /* Ensure images fit within their containers */
+}
+
+
+.featured-container:hover {
+    transform: translateY(-30px) scale(1.1);
+    transform: scale(1.1);
+    /* filter: brightness(80%); */
+}
+
+.featured-image {
+    width: 100%; /* Keep the image responsive */
+    height: 340px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.featured-product-content {
+    background-color: transparent;
+    width: 100%;
+    height: 210px; /* Adjust height as needed */
+    position: relative;
+    margin-top: -22.6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-product-info {
+    width: 100%;
+    padding: 5% 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-product-title {
+    padding: 10% 0% 1% 0%; 
+    font-family: 'Asul', sans-serif;
+    color: #000000;
+    text-align: left;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.featured-product-subtitle {
+    font-family: 'Asul', sans-serif;
+    color: #000000; 
+    font-size: 1em; 
+    margin: 0; 
+    text-align: left;
+    padding: 0%;
+}
+
+.featured-product-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3%;
+    padding: auto;
+    position: relative;
+}
+
+.fa-female {
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+.fa-tshirt{
+    font-size: 20px;
+}
+
+
+.type-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+}
+
+.type-product {
+    margin: 10px 10px; 
+}
+
+.type-product-button button {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 12px 30px;
+    background-color: #0d0b16;
+    color: #bbb7a6;;
+    border: 1.5px solid #be9f56;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: border 0.5s ease;
+    outline: none;
+}
+
+.type-product-button button:hover {
+    color: #ffffff;
+    background-color: #8e91eb;
+    border: 1.5px solid #41438a;
+    box-shadow: 0 0 10px #41438a, 0 0 20px #41438a;
+}
+
+.seeall-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    padding: 0;
+    position: absolute;
+    bottom: 0; /* Position the container at the bottom */
+    width: 100%; /* Make the container full width */
+}
+
+.seeall-button {
+    align-items: center;
+    background-color: #030303;
+    border: none;
+    border: 1.5px #E1BE7B solid;
+    color: #C3D5E6;
+    cursor: pointer;
+    display: flex;
+    /* font-family: "Asul", "sans-serif"; */
+    font-size: 1em;
+    font-weight: 500;
+    justify-content: center;
+    padding: 13px 25px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    transition: all 0.5s ease 0s;
+    margin-top: 20px; /* Ensure spacing above the button */
+}
+
+.seeall-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.seeall-button:hover {
+    background-color: #8e91eb;
+    border: 1.5px #000 solid;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.8), 0 17px 50px 0 rgba(0, 136, 169, 0.50);
+    color: #000;
+}

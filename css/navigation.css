@@ -1,0 +1,126 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar container */
+#nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 99;
+    background-color: #ffffff; /* Clean white background */
+    border-bottom: 1px solid #eaeaea; /* Subtle divider */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* General link and button styles */
+#nav li, a, button {
+    color: #333333; /* Neutral, clean text color */
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* Left-aligned navigation links */
+.navleft-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navleft-links li {
+    padding-right: 30px; /* Reduced spacing for a compact layout */
+}
+
+.navleft-links li a {
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navleft-links li a:hover {
+    color: #0078d4; /* Accent color for hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.navleft-links a::after {
+    content: "";
+    position: absolute;
+    background-color: #0078d4; /* Matches hover color */
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.navleft-links a:hover::after {
+    width: 100%; /* Underline grows on hover */
+}
+
+/* Right-aligned navigation links */
+.navright-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: auto; /* Align to the right */
+    padding: 0;
+}
+
+.navright-links li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1em;
+    position: relative;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navright-links li a:hover {
+    color: #0078d4; /* Matches the left links */
+    transform: translateY(-2px);
+}
+
+.navright-links a::after {
+    content: "";
+    position: absolute;
+    background-color: #0078d4; /* Matches hover color */
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.navright-links a:hover::after {
+    width: 100%;
+}
+
+/* Responsive design for mobile screens */
+@media screen and (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navleft-links, .navright-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navleft-links li, .navright-links li {
+        padding: 10px 0;
+    }
+}

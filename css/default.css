@@ -1,0 +1,83 @@
+/* Font Faces - Updated for modern minimalist fonts */
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/roboto-font/RobotoRegular-3m4L.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/open-sans-font/OpenSans-B9K8.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/montserrat-font/MontserratRegular-BWBEl.ttf);
+}
+
+/* Base styling for smaller screens */
+@media (max-width: 768px) {
+    .common-background {
+        min-width: 100%;
+        max-width: 100%;
+        background-size: cover; /* Ensures better responsiveness */
+    }
+}
+
+/* General Element Styles */
+* {
+    font-family: "Roboto", sans-serif; /* Clean, readable default font */
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Neutral dark gray for text */
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #f9f9f9; /* Light background for a clean look */
+    margin: 0 auto;
+    padding: 0 auto;
+    min-width: 1366px;
+    max-width: 1920px;
+    overflow-x: hidden;
+    margin-right: calc(100vw - 100%);
+    font-family: "Roboto", sans-serif;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #0078d4; /* Accent blue for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056a1; /* Darker shade for hover */
+}
+
+/* Image Styles */
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    max-width: 100%;
+    height: auto; /* Ensure images are responsive */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    body {
+        min-width: 100%; /* Make body adapt to smaller screen sizes */
+    }
+}

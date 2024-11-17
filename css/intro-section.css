@@ -1,0 +1,103 @@
+#intro-section {
+    align-items: center;
+    display: block;
+    justify-content: space-between;
+    min-width: 1366px;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.intro-content {
+    display: flex; /* Change to flex for better alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin: auto;
+    padding-top: 4%;
+    position: relative; /* Consider changing to absolute if needed */
+    text-align: center;
+    width: 100%;
+}
+
+.intro-image {
+    filter: brightness(90%);
+    width: 100%; /* Maintain responsive width */
+    max-width: 300px; /* Cap the width if necessary */
+    z-index: 2;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0% 5%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+.intro-title {
+    color: #FFF;
+    font-family: "ChampFleury", sans-serif;
+    font-size: 4em;
+    font-weight: 2000;
+    margin-bottom: 1%;
+    position: relative;
+    text-align: center;
+    text-shadow: 8px 8px 2px #000;;
+}
+
+.intro-description {
+    color: #C3D5E6;
+    font-family: "ChampFleury", sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 2em;
+    margin-bottom: auto;
+    padding: 10px 450px;
+    text-align: center;
+    width: 100%;
+}
+
+.exploreshop-container {
+    display: flex;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: auto;
+    position: relative;
+    text-align: center;
+}
+
+.exploreshop-button {
+    align-items: center;
+    background-color: #030303;
+    border: none;
+    border: 1.5px #E1BE7B solid;
+    color: #C3D5E6;
+    cursor: pointer;
+    display: flex;
+    font-family: "Asul", "sans-serif";
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 13px 20px;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    transition: all 0.5s ease 0s;
+}
+
+.exploreshop-icon {
+    margin-right: 8px;
+}
+
+.exploreshop-button:hover {
+    background-color: #F09D00;
+    border: 1.5px #000 solid;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.8), 0 17px 50px 0 rgba(0, 136, 169, 0.50);
+    color: #000;
+}

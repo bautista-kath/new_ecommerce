@@ -1,0 +1,131 @@
+body {
+    background-color:  #FFF;
+}
+
+#contact-section {
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 1366px;
+    max-width: 1920px;
+    z-index: 1;
+}
+
+.contact-content {
+    padding-top: 10%;
+
+}
+.contact-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.contact-sub-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 500;
+    font-size: 1.0em;
+    color: #FFF;
+    line-height: 2em;
+    text-align: center;
+    margin-bottom: 1%;
+    width: 100%;
+}
+
+.contact-title {
+    font-family: "Paradox King Script", sans-serif;
+    font-weight: bolder;
+    font-size: 4em;
+    color: #FFF;
+    margin-bottom: 1%;
+    position: relative;
+    text-align: center;
+    text-shadow: 8px 8px 2px #000;;
+}
+
+.contact-main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12%;
+    margin-bottom: 1%;
+    padding: auto;
+    text-align: justify;
+}
+
+.contact-main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: auto
+}
+
+.content-left-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bolder;
+    font-size: 2.6em;
+    color: #000;
+    margin-right: 15px;
+    line-height: 2em;
+    text-align: left;
+    width: 800px;
+}
+
+.content-right-description {
+    text-align: justify;
+    padding: auto;
+    color: #000;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.0em;
+    letter-spacing: 0.04em;
+    line-height: 2em;
+    width: 800px;
+}
+
+.contact-second-main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: auto;
+    text-align: justify;
+}
+
+.contact-second-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: auto
+}
+
+.second-content-left-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bolder;
+    font-size: 2.6em;
+    color: #000;
+    margin-right: 100px;
+    line-height: 2em;
+    text-align: left;
+
+}
+
+.second-content-right-description {
+    text-align: justify;
+    padding: auto;
+    color: #000;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.0em;
+    letter-spacing: 0.04em;
+    line-height: 2em;
+    width: 800px;
+}
