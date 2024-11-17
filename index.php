@@ -158,13 +158,8 @@
                     </div>
                 </div>
                 <!-- WOMENS CATEGORIES -->
-                <div class="featured-main" id="womens-categories">
-                    <div class="featured-container">
-                        <?php display_women_categories(); ?>
-                    </div>
-                </div>
 
-                <!-- <div class="featured-main" id="womens-categories">
+                <div class="featured-main" id="womens-categories">
                     <div class="featured-container">
                         <a href="#">
                             <img class="featured-image" src="./images/pictures/tops-women.jpg" width="100%" alt="crusader sword">
@@ -240,11 +235,11 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <br><br><br>
 
                 <!-- MENS CATEGORIES -->
-                <!-- <div class="featured-main" id="mens-categories">
+                <div class="featured-main" id="mens-categories">
                     <div class="featured-container">
                         <a href="#">
                             <img class="featured-image" src="./images/pictures/tops-men.png" width="100%" alt="char'a'ina set">
@@ -320,12 +315,12 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                 <br><br><br>
 
                 <!-- UNISEX CLOTHING -->
-                <!-- <div class="featured-main" id="unisex-categories">
+                <div class="featured-main" id="unisex-categories">
                     <div class="featured-container">
                         <a href="#">
                             <img class="featured-image" src="./images/pictures/i-productfeatured02.jpg" width="100%" alt="char'a'ina set">
@@ -401,7 +396,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <br><br><br><br><br><br><br>
                 <div class="seeall-container">
                     <button class="seeall-button" type="button">

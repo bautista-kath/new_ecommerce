@@ -38,7 +38,7 @@ function display_women_categories() {
 
         // Output the category in a responsive column
         echo "
-        <div class='col-12 col-md-2 mb-3'> <!-- col-12 for mobile, col-md-2 for 5 columns on medium screens -->
+        <div class='col-12 col-sm-6 col-md-2 mb-3'> <!-- Updated columns for better responsiveness -->
             <div class='featured-container'>
                 <a href='category.php?id=$categoryID'>
                     <img class='featured-image' src='./images/pictures/$imageName' alt='$categoryName' width='100%'>
@@ -72,4 +72,5 @@ function display_women_categories() {
 
     echo "</div>"; // Close the featured-main div
 }
+
 ?>

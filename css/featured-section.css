@@ -1,19 +1,21 @@
 #featured-section {
+    #featured-section {
     margin: auto;
-    padding: 0; /* Remove fixed padding to let content define the height */
+    padding-bottom: 1350px;
     min-width: 1366px;
     max-width: 1920px;
-    width: 100%; /* Ensure section spans full width */
+    min-height: 5000px; /* Minimum height */
     position: relative;
     z-index: 7;
-    background-color: #d2cece; /* Optional: Set a neutral background color */
+}
 }
 
 .featured-header {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 4% 1%; /* Flexible padding for spacing */
+    padding-top: 4%;
+    padding-left: 1%;
     align-items: flex-start; /* Align to start, instead of left */
     width: 100%;
     position: relative;
@@ -34,38 +36,32 @@
 }
 
 .featured-main {
-    /* display: flex;
-    flex-wrap: row; */
+    display: flex;
+    flex-direction: row;
     margin: auto;
-    padding: 2% 5%; /* Add spacing around content */
+    padding: 0 5%;
     width: 100%;
-    /* align-items: stretch; */
+    margin-top: 2%;
+    align-items: stretch;
 }
 
 .featured-container {
     height: 400px;
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    padding: 5px;
-    /* border: 30px solid #000; */
-    width: 100%;
-    max-width: 100%; /* Limit container width for responsive design */
-    /* border-image: url(../images/borders/border-01.png) 12.9% round; */
+    padding: 1px;
+    width: 33%;
     z-index: 2;
     transition: transform 500ms;
     cursor: pointer;
-}
-
-.featured-container img {
-    width: 100%; /* Ensure images fit within their containers */
 }
 
 
 .featured-container:hover {
     transform: translateY(-30px) scale(1.1);
     transform: scale(1.1);
-    /* filter: brightness(80%); */
+    filter: brightness(80%);
 }
 
 .featured-image {
@@ -93,7 +89,7 @@
 
 .featured-product-title {
     padding: 10% 0% 1% 0%; 
-    font-family: 'Asul', sans-serif;
+    /* font-family: 'Asul', sans-serif; */
     color: #000000;
     text-align: left;
     font-size: 1.5em;
@@ -101,8 +97,8 @@
 }
 
 .featured-product-subtitle {
-    font-family: 'Asul', sans-serif;
-    color: #000000; 
+    /* font-family: 'Asul', sans-serif; */
+    color: #8398ad; 
     font-size: 1em; 
     margin: 0; 
     text-align: left;
@@ -116,6 +112,7 @@
     padding: auto;
     position: relative;
 }
+
 
 .fa-female {
     font-size: 20px; /* Adjust the size as needed */
@@ -159,10 +156,16 @@
     box-shadow: 0 0 10px #41438a, 0 0 20px #41438a;
 }
 
+.section {
+    display: flex;
+    flex-direction: row; /* Or row if you prefer horizontal layout */
+}
+
+
 .seeall-container {
     display: flex;
     justify-content: center;
-    margin: 25px;
+    margin: 50px 0; /* Adjust top and bottom margins as needed */
     padding: 0;
     position: absolute;
     bottom: 0; /* Position the container at the bottom */
